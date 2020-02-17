@@ -1,0 +1,194 @@
+ <!DOCTYPE html>
+    <head>
+       <style type="text/css">
+          label{
+               display: inline-block;
+               float: left;
+               clear: left;
+               width: 50%;
+               text-align: left;
+               }
+         #textarea{
+              display: inline-block;
+              float: right;
+              }
+         #input, #first {
+              display: inline-block;
+              float: right;
+             
+              }  
+               
+          #yurts, #reservation, #activities
+               {
+               visibility:hidden;
+               }
+         
+        </style>
+        <meta charset="UTF-8">
+        <title>
+             Self Test 2
+        </title>
+    </head>
+    <body>
+        <header>
+              <b><p> Montclair Red Hawk Resort</p> 
+                 <p> <a href="javascript:visibilityFunc('home')" >Home</a>
+                     <a href="javascript:visibilityFunc('yurts')">Yurts</a>
+                     <a href="javascript:visibilityFunc('activities')">Activities</a>
+                     <a href="javascript:visibilityFunc('reservation')">Reservation</a></p> 
+              </b>
+        </header>
+     
+     
+        <div id="home" style="visibility:visible;">
+           <p>Enjoy Nature in Luxury</p> 
+           <img src="https://previews.123rf.com/images/jee1999/jee19991705/jee1999170500242/79150852-tropical-beach-scenery-at-andaman-sea-in-phuket-thailand-exotic-sea-view-with-people-relaxing-on-vac.jpg" alt="scenary" width="200" height="200">
+           <br>
+            Montclair Red Hawk Resort offers a special lodging experience on the New Jersey Shore
+           <br>Relax in serenity with panoramic views of the Atlantic Ocean
+           <br>
+             <ul>
+                <li>Private yurts with decks overlooking the ocean</li>
+                <li>Activities  lodge with the fireplace and gift shop</li>
+                <li>Nighty fine dining at the Overlook cafe</li>
+                <li>Head outdoor pool and whirlpool</li>
+                <li>Guided hiking tours of the redwoods</li>
+             </ul>
+           <p> Montclair Red Hawk Resort<br>
+            1 Atlantic Ave.<br>
+            Atlantic City, NJ 07777<br>
+            973-655-4166
+           </p>
+        </div>
+        <footer  margin-top: 10px;>
+            <i>
+             Copyright &#169; 2018 Montclair Red Hawk Resort
+             <br><a href="mailto:karthikeyand1@montclair.edu">karthikeyand1@montclair.edu</a>
+            </i>
+     </footer>
+        <div id="yurts" >
+             <b><p style="font-size:25px">The Yurts at Montclair Trails</p></b>
+             <p><b>What is a yurt?</b><br>
+             &emsp; Our luxury yurts are permanent structure four feet off the ground.Each yurt has canvas walls,a<br>
+             &emsp; wooden floor, and a roof dome that can be opened.<br></p>
+             <p><b>How are the yurts furnished?</b><br>
+             &emsp; Each yurt is furnished with a queen-size bed with down quilt and gas-fired stove.The luxury<br>
+             &emsp; camping experience also includes electricity and a sink with hot and cold running water. Shower<br>
+             &emsp; and restroom facilities are located in the lodge.<br></p>
+             <p><b>What should I bring?</b><br>
+             &emsp; Bring a sense of adventure and some time to relax! Most guests also pack comfortable walking<br>
+             &emsp; shoes and plan to dress for changing weather with layers of clothing</p>
+        </div>
+        <div id="activities" >
+             <p style="font-size:20px">Activties at Montclair Trials</p>
+             <table border="2">
+                <tr>
+                    <td>Pool-Free</td>
+                    <td>Parasailing-$100</td>
+                </tr>
+                <tr>
+                     <td><img src="http://dailynewsdig.com/wp-content/uploads/2014/04/31-Most-Beautiful-Custom-Swimming-pools-To-Swim-In-Before-You-Die-25.jpg" alt="pool" width="200" height="200"></td>
+                     <td><img src="https://tse2.mm.bing.net/th?id=OIP.nZWtxxQz2rg5HJAGg9HP9AHaFj&pid=Api&P=0&w=227&h=171" alt="parasailing" width="200" height="200"> </td>
+                 </tr>
+                 <tr>
+                     <td>Golf-$20</td>
+                     <td>Hiking-Free</td>
+                 </tr>
+                 <tr>
+                     <td><img src="http://media.istockphoto.com/photos/golf-course-where-the-turf-is-beautiful-and-golf-ball-on-fairway-golf-picture-id1028547292?k=6&m=1028547292&s=612x612&w=0&h=ahhAYHIRMfCpGmV42U7quDBXW70hWICbZjO1DOBcTiw=" alt="golf" width="200" height="200"></td>
+                     <td><img src="https://a57.foxnews.com/images.foxnews.com/content/fox-news/great-outdoors/2017/11/07/meet-man-hiking-entire-western-hemisphere/_jcr_content/par/featured_image/media-0.img.jpg/931/524/1510078569799.jpg?ve=1&tl=1&text=big-top-image" alt="hiking" width="200" height="200"> </td>
+                 </tr>
+             </table>
+        </div>
+        <div id="reservation" >
+             <form method="post" action="http://www.montclair.edu/">
+                <Label>First Name:
+                    <input id="first" type="text"  name="firstname"  size="30" autofocus="true">
+                </Label><br>
+                <Label>Last Name:
+                     <input id="input" type="text"  name="lastname" size="30">
+                </Label><br>
+                <Label>Address:
+                      <input id="input" type="text"  name="address" size="30">
+                </Label><br>
+                <Label> Number & Street:
+                       <input id="input" type="text"  name="number" size="30">
+                </Label><br>
+                <Label>City:
+                        <input id="input" type="text"  name="city" size="30">
+                </Label><br>
+                <Label>State:
+                       <input id="input" list="state" size="30">
+                <datalist id="state">
+                       <option value="AK   Alaska">
+                       <option value="AL   Alabama">
+                       <option value="AR   Arkansas">
+                       <option value="AZ   Arizona ">
+                       <option value="CA   California ">
+                </datalist>
+                </Label><br>
+                <Label> Zip Code:
+                     <input id="input" type="text"  name="zipCode" size="30">
+                </Label><br>
+                <Label>Check-in Date:
+                      <input id="input" type="date"  name="checkindate" size="30">
+                </Label><br>
+                <Label>Check-out Date:
+                       <input id="input" type="date"  name="checkoutdate" size="30">
+                </Label><br>
+                <Label>Phone:
+                       <input id="input" type="tel"  name="phone" placeholder="(###)###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="30">
+                </Label><br>
+                <Label>E-mail Address:
+                        <input id="input" type="email"  name="email" size="30">
+                </Label><br>
+                <Label> Payment Method:
+                        <input id="input" list="payment" size="30">
+                <datalist id="payment">
+                            <option value=" MC     MasterCard">
+                            <option value=" VISA   Visa">
+                            <option value=" AMEX   MasterCard">
+                            <option value=" Discover ">
+                </datalist>
+                </Label><br>
+                <Label>*Card Number:
+                        <input id="input" type="text"  name="card" size="30">
+                </Label><br>
+                <Label><b> Special Requests:</b>
+                    
+                    <textarea id="textarea" rows="4" cols="30">
+                    
+                    </textarea>
+                </Label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+               
+                <b><input type="submit" value="Submit"></b> 
+                <b><input type="reset" value="Reset"></b> 
+             </form>
+          
+            <p>
+            Montclair Red Hawk Resort<br>
+            1 Atlantic Ave.<br>
+            Atlantic City, NJ 07777<br>
+            973-655-4166
+            </p>
+         </div>
+     
+       <script>
+                function visibilityFunc(ele) {
+                        
+                         document.getElementById("home").innerHTML=  document.getElementById(ele).innerHTML;
+                         if (ele=="reservation") {
+                          document.getElementById("first").focus();
+                         }
+               
+                }
+       </script>
+  </body>
+</html>

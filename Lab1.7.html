@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Lab 1.7
+        </title>
+  
+    </head>
+    <body>
+        <form method="post" action="http://montclair.edu"><!--action left empty which submits form value to valid URL-->
+        <label>First Name:
+         <input type="text" name="firstname">
+        </label>
+        
+       
+        <br>
+        <label>Last Name:
+        <input type="text" name="lastname">
+        </label>
+        
+        <br>
+        <label>E-Mail Address:
+        <input type="email" name="email">
+        </label>
+        
+        <br>
+        <label>Phone Number:
+         <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-##-####">
+        </label>
+
+        <br>
+          <br>
+        <label>Resident State:</label>
+        <select name="state">
+  
+            <option value="AL"> AL</option>
+            <option value="AK">AK</option>
+            <option value="AR">AR</option>
+            <option value="GA">GA</option>
+            <option value="IN">IN</option>
+            <option value="NJ" selected> NJ</option>
+                      
+            <option value="NY">NY</option>
+            <option value="KS">KS</option>
+            <option value="MD"> MD</option>
+        </select>
+        <br>
+         <br>
+       <label>
+        Age Group
+       <br>
+       <label>
+         <input type="radio" name="Age" value="0-20" checked>
+        0-20
+           
+       </label>
+   <br>
+         <label>
+              <input type="radio" name="Age" value="20-40">
+            20-40
+          
+       </label>
+         <br>
+            <label>
+                 <input type="radio" name="Age" value="40-60">
+                41-60
+           
+       </label>
+            <br>
+        <label>
+             <input type="radio" name="Age" value="over60">
+            Over 60
+  
+       </label>
+     
+       <br>
+        <br>
+       <label>
+        Membership:
+       </label>
+        <br>
+        <label>
+        <input type="checkbox" name="member" value="AAA" checked>
+        AAA
+        </label>
+            <label>
+        <input type="checkbox" name="member" value="Costco">
+           Costco
+        </label>
+            <label>
+        <input type="checkbox" name="member" value="IEEE">
+           IEEE
+        </label>
+            <label>
+        <input type="checkbox" name="member" value="ACM">
+           ACM
+        </label>
+       
+       <br>
+        <br>
+       <label>Comments:
+       <br>
+        <textarea name="comments" rows="5" cols="40">
+            
+        </textarea>
+       </label>
+       <br>
+       <br>
+       <input  type="submit" value="Submit Form"/>
+       <input   type="reset" value="Reset Form"/>
+    </body>
+</html>
